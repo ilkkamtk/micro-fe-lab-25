@@ -1,5 +1,5 @@
 import { useMediaContext } from 'mediastore/contextHooks';
-import { Front } from 'front_and_sidebar/Front';
+import Front from 'front_and_sidebar/Front';
 
 const Home = () => {
   const { mediaItems } = useMediaContext();

@@ -10,7 +10,9 @@ export default defineConfig({
       name: 'front_and_sidebar',
       filename: 'remoteEntry.js',
       exposes: {
-        './Front': './src/components/front/Front.tsx',
+        './Front': './src/components/front/Front',
+        './Sidebar': './src/components/sidebar/Sidebar',
+        './ThumbCarousel': './src/components/thumb-carousel/ThumbCarousel',
       },
       shared: ['react', 'react-dom', 'react-router-dom'],
     }),
