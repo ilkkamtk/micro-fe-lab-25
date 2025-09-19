@@ -15,7 +15,7 @@ import { useForm } from '@/hooks/formHooks';
 import { MediaItem } from '@sharedTypes/DBTypes';
 import { useState } from 'react';
 import { LuPen } from 'react-icons/lu';
-// TODO: import useMedia from mediastore mfe
+import { useMedia } from 'mediastore/apiHooks';
 
 const ModifyMedia = (props: {
   mediaItem: MediaItem;
