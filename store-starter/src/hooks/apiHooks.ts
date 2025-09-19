@@ -124,7 +124,6 @@ const useMedia = (
 };
 
 const useUser = () => {
-  // TODO: implement network functions for auth server user endpoints
   const getUserByToken = async (token: string) => {
     const options = {
       headers: {

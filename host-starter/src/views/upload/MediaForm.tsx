@@ -54,7 +54,6 @@ const MediaForm = () => {
 
       const mediaResult = await postMedia(fileResult, mediaInputs, token);
       alert(mediaResult.message);
-      // TODO: redirect to Profile
       navigate('/profile');
     } catch (e) {
       console.log((e as Error).message);
