@@ -1,7 +1,6 @@
 import { MediaItem } from '@sharedTypes/DBTypes';
 import FrontThumbnail from './FrontThumbnail';
 
-// TODO: this is basically the same as Home in the example app
 const Front = (props: { mediaItems: MediaItem[] }) => {
   const { mediaItems = [] } = props;
 
