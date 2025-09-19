@@ -16,7 +16,7 @@ export default defineConfig({
         './contextHooks': './src/hooks/contextHooks.ts',
         './apiHooks': './src/hooks/apiHooks.ts',
       },
-      shared: ['react', 'react-dom', 'react-router-dom'],
+      shared: ['react', 'react-dom'],
     }),
   ],
   server: {

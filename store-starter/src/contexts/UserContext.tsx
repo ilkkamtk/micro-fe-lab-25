@@ -3,7 +3,6 @@ import { useAuthentication, useUser } from '@/hooks/apiHooks';
 import { AuthContextType, Credentials } from '@sharedTypes/DBTypes';
 import { UserWithNoPassword } from '@sharedTypes/DBTypes';
 import React, { createContext, useState } from 'react';
-// import { useLocation, useNavigate } from 'react-router-dom';
 
 const UserContext = createContext<AuthContextType | null>(null);
 
@@ -11,8 +10,6 @@ const UserProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<UserWithNoPassword | null>(null);
   const { postLogin } = useAuthentication();
   const { getUserByToken } = useUser();
-  //   const navigate = useNavigate();
-  //   const location = useLocation();
 
   // login, logout and autologin functions are here instead of components
   const handleLogin = async (credentials: Credentials) => {
