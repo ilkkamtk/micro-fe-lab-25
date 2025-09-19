@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from '@/hooks/formHooks';
 import { UploadResponse } from '@sharedTypes/MessageTypes';
-// TODO: import useFile and useMedia from mediastore mfe
+import { useMedia, useFile } from 'mediastore/apiHooks';
 
 const MediaForm = () => {
   const [mediaType, setMediaType] = useState<'video' | 'live_stream'>('video');

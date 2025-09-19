@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 import { useEffect, useState } from 'react';
 import { MediaItem } from '@sharedTypes/DBTypes';
 import ProfileThumbnail from './ProfileThumbnail';
-// TODO: import useMedia from mediastore mfe
-// TODO: import useUserContext from mediastore mfe
+import { useUserContext } from 'mediastore/contextHooks';
+import { useMedia } from 'mediastore/apiHooks';
 
 const UserInfo = () => {
   const [mediaItems, setMediaItems] = useState<MediaItem[]>([]);
