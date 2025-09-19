@@ -108,6 +108,7 @@ type MediaContextType = {
     mediaType: 'video' | 'live_stream',
   ) => void;
   deleteMediaItem: (id: string) => void;
+  refreshSingleMedia: () => void;
 };
 
 export type {

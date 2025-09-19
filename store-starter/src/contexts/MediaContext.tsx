@@ -199,6 +199,14 @@ const MediaProvider = ({ children }: { children: React.ReactNode }) => {
   };
   // ****************************************************************
 
+  // refresh single media item after commenting etc. *************************
+
+  const refreshSingleMedia = () => {
+    setRefreshSingleMediaItem(!refreshSingleMediaItem);
+  };
+
+  // *******************************************
+
   return (
     <MediaContext.Provider
       value={{
@@ -209,6 +217,7 @@ const MediaProvider = ({ children }: { children: React.ReactNode }) => {
         updateMediaItem,
         postMediaItem,
         deleteMediaItem,
+        refreshSingleMedia,
       }}
     >
       {children}
