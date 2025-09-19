@@ -11,6 +11,7 @@ export default defineConfig({
       name: 'host',
       remotes: {
         mediastore: 'http://localhost:3001/assets/remoteEntry.js',
+        front_and_sidebar: 'http://localhost:3002/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom', 'react-router-dom'],
     }),

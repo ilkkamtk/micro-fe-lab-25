@@ -10,7 +10,7 @@ export default defineConfig({
       name: 'front_and_sidebar',
       filename: 'remoteEntry.js',
       exposes: {
-        '../Front': './src/components/front/Front.tsx',
+        './Front': './src/components/front/Front.tsx',
       },
       shared: ['react', 'react-dom', 'react-router-dom'],
     }),
